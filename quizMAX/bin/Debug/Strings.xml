@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<string>
+  <string name ="MainWindowTitle" str="Quiz"/>
+  <string name ="MenuButtonTests" str="Testy"/>
+  <string name ="MenuButtonTests_Learn" str="Tryb nauki"/>
+  <string name ="MenuButtonTests_Quiz" str="Tryb sprawdzianu"/>
+  <string name ="MenuButtonEdit" str="Edycja"/>
+  <string name ="MenuButtonEdit_Question" str="Edycja pytań"/>
+  <string name ="MenuButtonEdit_Test" str="Edycja testów"/>
+  <string name ="MenuButtonOther" str="Inne"/>
+  <string name ="MenuButtonAbout" str="O programie"/>
+  <string name ="AvailableTestsLabel" str="Dostępne testy: "/>
+  <string name ="DescriptionLabel" str="Opis: "/>
+  <string name ="NumberOfQuestionsLabel" str="Liczba pytań: "/>
+  <string name ="StartLearningButton" str="Rozpocznij naukę"/>
+  <string name ="LearnWindowTitle" str="Tryb nauki"/>
+  <string name ="QuestionLabel" str="Pytanie: "/>
+  <string name ="ResultLabel" str="Wynik: "/>
+  <string name ="ConfirmButton" str="Zatwierdź odpowiedzi"/>
+  <string name ="NextQuestionButton" str="Następne pytanie"/>
+  <string name ="QuestionNumberForQuizLabel" str="Liczba pytań w sprawdzianie: "/>
+  <string name ="PercentToPassLabel" str="Procentowy próg zaliczenia: "/>
+  <string name ="TimeLabel" str="Czas sprawdzianu (w sekundach): "/>
+  <string name ="QuizWindowTitle" str="Tryb sprawdzianu"/>
+  <string name ="StartQuizButton" str="Rozpocznij sprawdzian"/>
+  <string name ="PreviousQuestionButton" str="Poprzednie pytanie"/>
+  <string name ="EndQuizButton" str="Zakończ sprawdzian"/>
+  <string name ="MessageBoxResult" str="Wynik"/>
+  <string name ="MessageBoxYourResultIs" str="Twój wynik to: "/>
+  <string name ="MessageBoxQuizPassed" str="Gratulacje, zaliczyłeś test."/>
+  <string name ="MessageBoxQuizFailed" str="Niestety, nie zaliczyłeś testu."/>
+  <string name ="TimeLeftLabel" str="Pozostały czas: "/>
+  <string name ="EditTestButton" str="Edytuj test"/>
+  <string name ="DeleteTestButton" str="Usuń test"/>
+  <string name ="CreateTestButton" str="Stwórz nowy test"/>
+  <string name ="QuestionsInTestLabel" str="Pytania w teście: "/>
+  <string name ="EditTestTitle" str="Edycja testu"/>
+  <string name ="ConfirmEditionButton" str="Zatwierdź zmiany"/>
+  <string name ="TitleLabel" str="Tytuł: "/>
+  <string name ="AvailableQuestionsLabel" str="Dostępne pytania: "/>
+  <string name ="EditQuestionButton" str="Edytuj pytanie"/>
+  <string name ="CreateQuestionButton" str="Stwórz nowe pytanie"/>
+  <string name ="DeleteQuestionButton" str="Usuń pytanie"/>
+  <string name ="QuestionCantBeDeleted" str="Brak możliwości usunięcia pytania"/>
+  <string name ="EditQuestionOnView" str="Edycja pytania"/>
+  <string name ="AnswersLabel" str="Odpowiedzi: "/>
+  <string name ="AnswerTextLabel" str="Treść odpowiedzi: "/>
+  <string name ="IsCorrectLabel" str="Odpowiedź poprawna"/>
+  <string name ="QuestionTextLabel" str="Treść pytania: "/>
+  <string name ="DeleteAnswerButton" str="Usuń odpowiedź" />
+  <string name ="NewAnswerButton" str="Dodaj nową odpowiedź"/>
+  <string name="About" str="Quiz - program wykonany w ramach zaliczenia zajęć z przedmiotu Programowanie zdarzeniowe. Autorzy programu: Piotr Ciećwierz i Daniel Buczko"/>
+  <string name="NewAnswerValueString" str="nowa_odpowiedz"/>
+  <string name="OnlyQuestion" str="To pytanie nie może zostać usunięte, ponieważ jest to jedyne pytanie w testach:"/>
+
+</string>
