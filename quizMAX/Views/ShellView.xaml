@@ -1,0 +1,42 @@
+﻿<Window x:Class="quizMAX.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:quizMAX.Views"
+        Cursor="{Binding Path=Cursor}"
+        mc:Ignorable="d"
+        Title="{Binding Path=MainWindowTitle, Mode=OneWay}" Height="550" Width="900" WindowStartupLocation="CenterScreen">
+    <ScrollViewer VerticalScrollBarVisibility="Visible">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width='20'/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+
+            <!--Column 0 Row 0-->
+            <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+                <MenuItem Header="{Binding Path=MenuButtonTests}">
+                    <MenuItem x:Name="LoadLearnMode" Header="{Binding Path=MenuButtonTests_Learn}"/>
+                    <MenuItem x:Name="LoadQuizMode" Header="{Binding Path=MenuButtonTests_Quiz}"/>
+                </MenuItem>
+                <MenuItem Header="{Binding Path=MenuButtonEdit}">
+                    <MenuItem x:Name="LoadEditQuestion" Header="{Binding Path=MenuButtonEdit_Question}"/>
+                    <MenuItem x:Name="LoadEditTest" Header="{Binding Path=MenuButtonEdit_Test}"/>
+                </MenuItem>
+                <MenuItem Header="{Binding Path=MenuButtonOther}">
+                    <MenuItem x:Name="LoadAbout" Header="{Binding Path=MenuButtonAbout}"/>
+                </MenuItem>
+            </Menu>
+
+            <!--Column 1 Row 1-->
+            <ContentControl x:Name="ActiveItem" Grid.Column="1" Grid.Row="1"/>
+        </Grid>
+    </ScrollViewer>
+</Window>
