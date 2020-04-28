@@ -9,7 +9,7 @@ using System.Windows.Input;
 
 namespace quizMAX.ViewModels
 {
-    class ShellViewModel : Conductor<object>
+    class ShellViewModel : Conductor<object>, IHandle<CursorMessageModel>
     {
         readonly IWindowManager _windowManager;
         readonly EventAggregator _eventAggregator;
@@ -46,11 +46,11 @@ namespace quizMAX.ViewModels
         }
         public void LoadEditQuestion()
         {
-            //ActivateItem(new EditQuestionViewModel(this._windowManager, this._eventAggregator, this._db));
+            ActivateItem(new EditQuestionViewModel(this._windowManager, this._eventAggregator, this._db));
         }
         public void LoadEditTest()
         {
-            //ActivateItem(new EditTestViewModel(this._windowManager, this._eventAggregator, this._db));
+            ActivateItem(new EditTestViewModel(this._windowManager, this._eventAggregator, this._db));
         }
         public void LoadLearnMode()
         {
@@ -58,7 +58,7 @@ namespace quizMAX.ViewModels
         }
         public void LoadQuizMode()
         {
-            //ActivateItem(new QuizModeViewModel(this._windowManager, this._db));
+            ActivateItem(new QuizModeViewModel(this._windowManager, this._db));
         }
 
         public void Handle(CursorMessageModel message)
