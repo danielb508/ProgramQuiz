@@ -1,0 +1,57 @@
+﻿<Window x:Class="quizMAX.Views.EditTestPopUpView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:quizMAX.Views"
+        xmlns:cal="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro.Platform"
+        mc:Ignorable="d"
+        Title="{Binding Path=EditTestTitle}" Height="450" Width="900" WindowStartupLocation="CenterScreen">
+    <ScrollViewer VerticalScrollBarVisibility="Visible">
+        <Grid>
+            <!--Columns and Rows definitions-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <!--Borders for StackPanels-->
+            <Border Grid.Column="0"/>
+            <Border Grid.Column="1"/>
+            <Border Grid.Row="1" Grid.ColumnSpan="2"/>
+
+            <!--Column 0 Row 0-->
+            <StackPanel Grid.Column="0" Margin="20">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock FontSize="22" TextWrapping="Wrap" Text="{Binding Path=TitleLabel}"/>
+                    <TextBox x:Name="TitleValue" FontSize="18" Width="300" TextWrapping="Wrap"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock FontSize="22" TextWrapping="Wrap" Text="{Binding Path=DescriptionLabel}"/>
+                    <TextBox x:Name="DescriptionValue" FontSize="18" MinHeight="200" Width="250" TextWrapping="Wrap"/>
+                </StackPanel>
+            </StackPanel>
+
+            <!--Column 1 Row 0-->
+            <StackPanel Grid.Column="1">
+                <TextBlock Margin="10" FontSize="22" Text="{Binding Path=QuestionsInTestLabel}" />
+                <ListBox x:Name="Questions" FontSize="18"  SelectionMode="Multiple" DisplayMemberPath="QuestionText" VerticalAlignment="Stretch" cal:Message.Attach="[Event SelectionChanged] = [Action SelectionChanged()]">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListBoxItem}" BasedOn="{StaticResource {x:Type ListBoxItem}}">
+                            <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                </ListBox>
+            </StackPanel>
+
+            <!--Column 0 Row 1-->
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+                <Button x:Name="Confirm" Padding="5" FontSize="18" Content="{Binding Path=ConfirmEditionButton}" IsEnabled="{Binding Path=ConfirmEditionButtonIsEnabled}"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>
