@@ -49,7 +49,7 @@
   <string name ="QuestionTextLabel" str="Treść pytania: "/>
   <string name ="DeleteAnswerButton" str="Usuń odpowiedź" />
   <string name ="NewAnswerButton" str="Dodaj nową odpowiedź"/>
-  <string name="About" str="Quiz - program wykonany w ramach zaliczenia zajęć z przedmiotu Programowanie zdarzeniowe. Autorzy programu: Piotr Ciećwierz i Daniel Buczko"/>
+  <string name="About" str="QuizMAX - program wykonany w ramach zajęć 'Projekt zespołowy'. Autorzy: Daniel Buczko, Piotr Ciećwierz, Adam Parciak"/>
   <string name="NewAnswerValueString" str="nowa_odpowiedz"/>
   <string name="OnlyQuestion" str="To pytanie nie może zostać usunięte, ponieważ jest to jedyne pytanie w testach:"/>
 
