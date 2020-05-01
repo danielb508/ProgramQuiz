@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Piotr\Desktop\projekt zespolowy\implementacja\paczki do repo\update 1\quizMAX\obj\Debug\
+C:\Users\Piotr\Desktop\projekt zespolowy\github\ProgramQuiz\quizMAX\obj\Debug\
 quizMAX
 none
 false
 DEBUG;TRACE
-C:\Users\Piotr\Desktop\projekt zespolowy\implementacja\paczki do repo\update 1\quizMAX\App.xaml
-4959144019
+C:\Users\Piotr\Desktop\projekt zespolowy\github\ProgramQuiz\quizMAX\App.xaml
+10-1128114933
 21608765301
-29-272060525
-1261163393052
-Views\AboutView.xaml;Views\LearnModeView.xaml;Views\LearnPopUpView.xaml;Views\ShellView.xaml;
+421604137428
+1261736759485
+Views\AboutView.xaml;Views\EditQuestionPopUpView.xaml;Views\EditQuestionView.xaml;Views\EditTestPopUpView.xaml;Views\EditTestView.xaml;Views\LearnModeView.xaml;Views\LearnPopUpView.xaml;Views\QuizModeView.xaml;Views\QuizPopUpView.xaml;Views\ShellView.xaml;
 
 False
 
